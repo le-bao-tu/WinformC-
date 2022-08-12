@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0F1264A-4251-442F-919C-7561AD6F7B85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTL_QLSV_WINFORM</RootNamespace>
+    <AssemblyName>BTL_QLSV_WINFORM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccessConnect\SQLServerConnection.cs" />
+    <Compile Include="FrmCLASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCLASS.Designer.cs">
+      <DependentUpon>FrmCLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDSDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDSDT.Designer.cs">
+      <DependentUpon>FrmDSDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDSGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDSGV.Designer.cs">
+      <DependentUpon>FrmDSGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDSMH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDSMH.Designer.cs">
+      <DependentUpon>FrmDSMH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDSSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDSSV.Designer.cs">
+      <DependentUpon>FrmDSSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGV.Designer.cs">
+      <DependentUpon>FrmGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLopHoc.Designer.cs">
+      <DependentUpon>FrmLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpoint.Designer.cs">
+      <DependentUpon>Frmpoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPoints.Designer.cs">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudent.Designer.cs">
+      <DependentUpon>FrmStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubject.Designer.cs">
+      <DependentUpon>FrmSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCLASS.resx">
+      <DependentUpon>FrmCLASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDSDT.resx">
+      <DependentUpon>FrmDSDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDSGV.resx">
+      <DependentUpon>FrmDSGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDSMH.resx">
+      <DependentUpon>FrmDSMH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDSSV.resx">
+      <DependentUpon>FrmDSSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGV.resx">
+      <DependentUpon>FrmGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLopHoc.resx">
+      <DependentUpon>FrmLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpoint.resx">
+      <DependentUpon>Frmpoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPoints.resx">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudent.resx">
+      <DependentUpon>FrmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubject.resx">
+      <DependentUpon>FrmSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phan-mem-quan-ly-sinh-vien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ql.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gvt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diemjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
